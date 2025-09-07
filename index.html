@@ -1,0 +1,259 @@
+<!-- Doctor Portfolio Website (filled with sample realistic data) -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Rebecca Williams — Professional Medical Portfolio</title>
+  <meta name="description" content="Dr. Rebecca Williams — Specialist in Neurology. Book appointments, view services and contact details." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚕️</text></svg>">
+  <style>
+    .gradient-bg { background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%); }
+    .accent { color: #0b6fb2; }
+  </style>
+</head>
+<body class="gradient-bg text-slate-800 leading-relaxed">
+  <!-- NAV -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-600 to-cyan-400 flex items-center justify-center text-white font-semibold">DR</div>
+          <div>
+            <div class="font-semibold">Dr. Rebecca Williams</div>
+            <div class="text-xs text-slate-500">Neurology</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#resources" class="hover:underline">Patient Resources</a>
+          <a href="#testimonials" class="hover:underline">Testimonials</a>
+          <a href="#contact" class="btn-primary">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md bg-slate-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 flex flex-col gap-3">
+        <a href="#about" class="py-2">About</a>
+        <a href="#services" class="py-2">Services</a>
+        <a href="#resources" class="py-2">Patient Resources</a>
+        <a href="#testimonials" class="py-2">Testimonials</a>
+        <a href="#contact" class="py-2">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-6xl mx-auto px-6 py-12 lg:py-20">
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+      <div class="lg:col-span-2">
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-3">Dr. Rebecca Williams</h1>
+        <p class="text-slate-600 mb-6">Neurology • <span class="font-medium">8</span> years of experience. Compassionate care focused on patient outcomes and evidence-based practice.</p>
+        <div class="flex gap-4 flex-wrap">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-md shadow-sm">📅 Book Appointment</a>
+          <a href="#services" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md">View Services</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="text-sm text-slate-500">Patients treated</div>
+            <div class="text-xl font-semibold">1,200+</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="text-sm text-slate-500">Years experience</div>
+            <div class="text-xl font-semibold">8</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="text-sm text-slate-500">Clinics</div>
+            <div class="text-xl font-semibold">3</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="text-sm text-slate-500">Languages</div>
+            <div class="text-xl font-semibold">English, Spanish</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-4">
+        <img src="rebecca_profile.webp" alt="Dr photo" class="w-40 h-40 rounded-full object-cover border-4 border-white shadow-md -mt-12">
+        <div class="text-center">
+          <div class="font-semibold">Dr. Rebecca Williams</div>
+          <div class="text-sm text-slate-500">Neurology</div>
+        </div>
+        <div class="w-full">
+          <div class="text-xs text-slate-500">Location</div>
+          <div class="font-medium">123 Main Street, Boston, MA</div>
+        </div>
+        <a href="tel:+16175551234" class="w-full text-center py-2 border rounded-md">Call: +1 (617) 555-1234</a>
+        <a href="mailto:rebecca.williams@healthcare.com" class="w-full text-center py-2 bg-sky-50 rounded-md">Email: rebecca.williams@healthcare.com</a>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mt-14 bg-white rounded-lg p-8 shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4">About</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 text-slate-700">
+          <p class="mb-3">Dr. Rebecca Williams is a board-certified Neurologist with expertise in stroke management and epilepsy care. Graduated from Harvard Medical School and completed fellowship at Massachusetts General Hospital. Dr. Williams focuses on patient-centered care, preventive medicine, and evidence-based treatments.</p>
+          <h3 class="font-semibold mt-4">Qualifications</h3>
+          <ul class="list-disc list-inside text-slate-600">
+            <li>MD, Harvard Medical School (2012)</li>
+            <li>Fellowship in Neurology, Massachusetts General Hospital</li>
+            <li>Board Certification — American Board of Psychiatry and Neurology</li>
+          </ul>
+        </div>
+        <div class="md:col-span-1">
+          <h3 class="font-semibold">Clinic Hours</h3>
+          <ul class="text-slate-600">
+            <li>Mon — Fri: 9:00 AM — 5:00 PM</li>
+            <li>Sat: 10:00 AM — 2:00 PM</li>
+            <li>Sun: Closed</li>
+          </ul>
+
+          <h3 class="font-semibold mt-4">Insurance</h3>
+          <div class="text-slate-600">Blue Cross, Aetna, UnitedHealthcare</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="mt-10">
+      <h2 class="text-2xl font-semibold mb-6">Services & Specialties</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <div class="text-lg font-semibold">General Consultation</div>
+          <p class="text-slate-600 mt-2">Diagnosis, treatment planning and referrals.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <div class="text-lg font-semibold">Stroke Management</div>
+          <p class="text-slate-600 mt-2">Comprehensive evaluation and care for stroke patients.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <div class="text-lg font-semibold">Epilepsy Treatment</div>
+          <p class="text-slate-600 mt-2">Medication management and monitoring for seizure disorders.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="mt-10 bg-white p-8 rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4">Patient Resources</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold">Downloadable Forms</h3>
+          <ul class="list-disc list-inside text-slate-600">
+            <li><a href="#" class="text-sky-600 underline">New patient form (PDF)</a></li>
+            <li><a href="#" class="text-sky-600 underline">Consent form (PDF)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">FAQ</h3>
+          <div class="text-slate-600">
+            <p class="mb-3"><strong>Q:</strong> How do I book an appointment?<br><strong>A:</strong> Use the Book Appointment button or contact the clinic by phone.</p>
+            <p class="mb-3"><strong>Q:</strong> Do you accept walk-ins?<br><strong>A:</strong> Walk-ins are accepted subject to availability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="mt-10">
+      <h2 class="text-2xl font-semibold mb-6">Testimonials</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <blockquote class="p-6 bg-white rounded-lg shadow-sm">
+          <p class="text-slate-700">"Dr. Williams explained my condition clearly and helped me recover quickly. Highly recommended."</p>
+          <div class="mt-4 font-semibold">— John D.</div>
+        </blockquote>
+        <blockquote class="p-6 bg-white rounded-lg shadow-sm">
+          <p class="text-slate-700">"Professional and compassionate care. Excellent follow-up."</p>
+          <div class="mt-4 font-semibold">— Maria S.</div>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-10 bg-white p-8 rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4">Contact & Booking</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+          <p class="text-slate-600 mb-4">To book an appointment, call the clinic or use the contact form. For urgent matters please call immediately.</p>
+
+          <div class="mb-4">
+            <div class="text-sm text-slate-500">Clinic Address</div>
+            <div class="font-medium">123 Main Street, Boston, MA</div>
+          </div>
+
+          <div class="mb-4">
+            <div class="text-sm text-slate-500">Phone</div>
+            <a href="tel:+16175551234" class="font-medium">+1 (617) 555-1234</a>
+          </div>
+
+          <div class="mb-4">
+            <div class="text-sm text-slate-500">Email</div>
+            <a href="mailto:rebecca.williams@healthcare.com" class="font-medium">rebecca.williams@healthcare.com</a>
+          </div>
+
+          <div class="mb-6">
+            <div class="text-sm text-slate-500">Book Online</div>
+            <a href="https://calendly.com/drwilliams/appointment" target="_blank" class="inline-block mt-2 px-4 py-2 rounded-md border">Book with Calendly</a>
+          </div>
+
+          <div class="w-full h-48 bg-slate-100 rounded overflow-hidden">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.830393011119!2d-71.05888008454444!3d42.36008217918642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3709db3adf1c5%3A0x7c89b6a4f5f85c!2sBoston%20General%20Clinic!5e0!3m2!1sen!2sus!4v1600000000000" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <form id="contactForm" class="bg-slate-50 p-6 rounded-lg" onsubmit="">
+          <label class="block mb-2 text-sm">Full name</label>
+          <input required type="text" id="name" class="w-full p-2 mb-3 rounded border" placeholder="Your full name">
+
+          <label class="block mb-2 text-sm">Phone</label>
+          <input required type="tel" id="phone" class="w-full p-2 mb-3 rounded border" placeholder="Phone number">
+
+          <label class="block mb-2 text-sm">Email</label>
+          <input required type="email" id="email" class="w-full p-2 mb-3 rounded border" placeholder="your@email.com">
+
+          <label class="block mb-2 text-sm">Message</label>
+          <textarea id="message" required class="w-full p-2 mb-3 rounded border" rows="4" placeholder="Briefly describe your reason for visit"></textarea>
+
+          <div class="flex gap-3">
+            <button type="submit" class="px-4 py-2 rounded bg-sky-600 text-white">Send request</button>
+            <button type="button" class="px-4 py-2 rounded border">Contact via WhatsApp</button>
+          </div>
+          <p id="formMsg" class="text-sm mt-3 text-slate-600"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-12 text-sm text-slate-500 text-center pb-12">
+      &copy; <span id="year"></span> Dr. Rebecca Williams — All rights reserved. <br>
+      <a href="#" class="underline">Privacy Policy</a> • <a href="#" class="underline">Disclaimer</a>
+    </footer>
+  </main>
+
+  <!-- <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn && menuBtn.addEventListener('click', ()=> {
+      mobileMenu.classList.toggle('hidden');
+    });
+    function handleForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Appointment request from ' + name);
+      const -->
+</html>
